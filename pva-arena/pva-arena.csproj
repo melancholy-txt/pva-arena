@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fighters\Archer.cs" />
+    <Compile Include="Fighters\BattleMaster.cs" />
+    <Compile Include="Fighters\Champion.cs" />
+    <Compile Include="Fighters\EldritchKnight.cs" />
+    <Compile Include="Fighters\Fighter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zadani.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

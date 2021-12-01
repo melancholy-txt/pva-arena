@@ -1,0 +1,18 @@
+﻿Domácí úkol: (od 29.11. + 14 dní) to je termín odevzdání. = KONZOLOVA APLIKACE
+
+V případě dotazů se ptejte na hodině. Bude se to známkovat a ověřovat, že tomu kódu rozumíte.
+
+Cílem je vytvořit ARENU, kde bojují bojovníci. 
+
+Bojovníci mají role (Lukostřelec, Bojovník, Mage, Berserker)
+Každý má životy, útoky. 
+Lukostřelec má možnost vyhnout se útoku. 
+Bojovník může útok zablokovat.
+Mage nemůže nic.
+Berserker má šanci zaútočit znovu.
+
+Udělejte nadřazenou třídu, a ostatní z ní budou dědit, zkuste podědit co nejvíc chování.  Následně některé metody overidujte a upravte aby to vyhovovalo zadání. Chci možnost měnit HP, DMG, možnost vyhnutí, možnost blokace a tak dále. 
+
+Vytvořte arénu, které má metodu Turnaj, příme list bojovníku a vypíše informace kdo s kým bojuje, jak vypadají kola a pak vítěze, vítěz je poslední přeživší. 
+
+Pokud mám 4 bojovníky, tak po prvnim boji zbyde 1, pak je druhý boj a pak třetí a mam 1 vítěze, bojuje se náhodně a po boji se přeživšímu obnoví životy. 
