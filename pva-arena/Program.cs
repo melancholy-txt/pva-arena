@@ -10,6 +10,8 @@ namespace pva_arena
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world! Testing.");
+            Console.ReadLine();
         }
     }
 }
