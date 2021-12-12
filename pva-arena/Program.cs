@@ -27,8 +27,16 @@ namespace pva_arena
                 }
             }
             while (keeponcreatin);
-            Console.WriteLine("Jdeme bojovat!");
             
+            foreach (var i in fighters)
+            {
+                i.Greeting();
+            }
+
+            Console.WriteLine("Jdeme bojovat!");
+
+            ArenaUtilities.Tournament(fighters);
+
             Console.ReadLine();
         }
     }

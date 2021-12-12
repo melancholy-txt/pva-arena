@@ -23,6 +23,7 @@ namespace pva_arena
             BlockChance = blockChance;
         }
 
-        protected abstract void Greeting();
+        public abstract void Greeting();
+        public abstract void Attack();
     }
 }

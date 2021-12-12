@@ -57,5 +57,20 @@ namespace pva_arena
             return null;
 
         }
+
+        public static void Tournament(List<Fighter> fighters)
+        {
+            var r = new Random();
+            while(fighters.Count() > 1)
+            {
+                var f1 = r.Next(0, fighters.Count());
+                var f2 = r.Next(0, fighters.Count());
+                while (f2 == f1)
+                {
+                    f2 = r.Next(0, fighters.Count());
+                }
+
+            }
+        }
     }
 }
