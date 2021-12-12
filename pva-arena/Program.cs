@@ -37,6 +37,8 @@ namespace pva_arena
 
             ArenaUtilities.Tournament(fighters);
 
+            Console.WriteLine($"{fighters[0].Name} vyhrál turnaj!");
+
             Console.ReadLine();
         }
     }

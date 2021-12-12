@@ -8,14 +8,11 @@ namespace pva_arena
 {
     class BattleMaster : Fighter
     {
-        public BattleMaster(string name, int hP, int dMG, int dodgeChance, int blockChance) : base(name, hP, dMG, dodgeChance, blockChance)
+        public BattleMaster(string name, int hP, int dMG, int dodgeChance, int blockChance, int initiative, bool doubleAttack) : base(name, hP, dMG, dodgeChance, blockChance, initiative, doubleAttack)
         {
+
         }
 
-        public override void Attack()
-        {
-            throw new NotImplementedException();
-        }
 
         public override void Greeting()
         {
