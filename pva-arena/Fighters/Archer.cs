@@ -8,5 +8,8 @@ namespace pva_arena
 {
     class Archer : Fighter
     {
+        public Archer(string name, int hP, int dMG, int dodgeChance, int blockChance) : base(name, hP, dMG, dodgeChance, blockChance)
+        {
+        }
     }
 }

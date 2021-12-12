@@ -10,8 +10,11 @@ namespace pva_arena
     {
         static void Main(string[] args)
         {
-            ArenaUtilities.Startup();
-
+            var createF = ArenaUtilities.Startup();
+            if (createF)
+            {
+                ArenaUtilities.CreateFighter();
+            }
             Console.ReadLine();
         }
     }

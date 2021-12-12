@@ -8,5 +8,8 @@ namespace pva_arena
 {
     class Champion : Fighter
     {
+        public Champion(string name, int hP, int dMG, int dodgeChance, int blockChance) : base(name, hP, dMG, dodgeChance, blockChance)
+        {
+        }
     }
 }
