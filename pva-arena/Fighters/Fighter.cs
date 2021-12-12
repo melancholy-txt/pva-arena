@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pva_arena
 {
-    class Fighter
+    abstract class Fighter
     {
         public string Name { get; set; }
         public int HP { get; set; }
@@ -22,5 +22,7 @@ namespace pva_arena
             DodgeChance = dodgeChance;
             BlockChance = blockChance;
         }
+
+        protected abstract void Greeting();
     }
 }

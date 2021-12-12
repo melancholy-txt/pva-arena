@@ -8,26 +8,21 @@ namespace pva_arena
 {
     class ArenaUtilities
     {
-        public static bool Startup()
+        public static void Startup()
         {
             Console.WriteLine("Vítejte v aréně!");
             Console.WriteLine("Chcete vytvořit nového bojovníka? y/n");
             string tvorba = Console.ReadLine();
-            if (tvorba.Trim().ToLower() == "n")
-            {
-                Console.WriteLine(":( ok, tak nic");
-                return false;
-            }
             if (tvorba.Trim().ToLower() == "y")
             {
                 Console.WriteLine("Jdeme na to!");
-                return true;
+                return;
 
             }
             else
             {
-                Console.WriteLine("bruh, to beru jako ne");
-                return false;
+                Console.WriteLine("mas smulu stejne ho udelame");
+                return;
             }
         }
 

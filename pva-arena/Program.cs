@@ -10,11 +10,25 @@ namespace pva_arena
     {
         static void Main(string[] args)
         {
-            var createF = ArenaUtilities.Startup();
-            if (createF)
+            var fighters = new List<Fighter>(); 
+
+            ArenaUtilities.Startup();
+            bool keeponcreatin = true;
+            do
             {
-                ArenaUtilities.CreateFighter();
+                Fighter cosedeje = ArenaUtilities.CreateFighter();
+                fighters.Add(cosedeje);
+                Console.WriteLine($"Nový bojovník {cosedeje.Name}!");
+                Console.WriteLine("Přejete si vytvořit dalšího? y/n");
+                var ans = Console.ReadLine();
+                if (ans.Trim().ToLower() == "n")
+                {
+                    keeponcreatin = false;
+                }
             }
+            while (keeponcreatin);
+            Console.WriteLine("Jdeme bojovat!");
+            
             Console.ReadLine();
         }
     }
