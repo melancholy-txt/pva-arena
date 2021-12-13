@@ -25,6 +25,14 @@ namespace pva_arena
                 {
                     keeponcreatin = false;
                 }
+                else if (ans.Trim().ToLower() == "y")
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("Máš smůlu, to beru jako ano.");
+                }
             }
             while (keeponcreatin);
             

@@ -62,7 +62,7 @@ namespace pva_arena
         {
             var r = new Random();
             bool keepOnFightin = true;
-            while (fighters.Count() > 1)
+            while (fighters.Count()> 1)
             {
                 keepOnFightin = true;
                 var f1 = r.Next(0, fighters.Count());
